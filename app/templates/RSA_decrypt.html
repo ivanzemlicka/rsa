@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>RSA decryption</title>
+  </head>
+  <body>
+    <h2>RSA decryption</h2>
+    <h4>Enter values and click on the decrypt button.</h4>
+    <form method="POST" action ="/">
+      <p align=left>
+        Prime p:     
+        <input type="text" name="enter_prime_p" value="{{prime_p}}"></input> 
+        <br> Prime q: 
+        <input type="text" name="enter_prime_q" value="{{prime_q}}"></input>
+        <br> Encrypted message:
+        <input type="text" name="enter_message_m" value="{{message_m}}"></input>
+        <br> Encryption Key:
+        <input type="text" name="enter_encryption_key_e" value="{{encryption_key_e}}"></input>
+        <br>
+        <input type="submit" name="decrypt_the_message" value="decrypt the message"></input>
+        <input type="submit" name="go_to_homepage" value="go to homepage"></input>
+      </p>
+    </form>
+  </body>
+</html>

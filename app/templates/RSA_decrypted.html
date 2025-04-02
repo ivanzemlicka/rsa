@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>RSA decrypted</title>
+  </head>
+  <body>
+    <h2>RSA decrypted</h2>
+    <h4>Encrypted message {{encrypted_message_em}} was decrypted into {{original_message}}.</h4>
+    <form method="POST" action ="/">
+        <input type="hidden" name="original_message" value="{{ original_message }}">
+        <input type="hidden" name="encrypted_message_em" value="{{ encrypted_message_em }}">
+        
+        <input type="submit" name="send_the_encrypted_message" value="send the encrypted message"></input>
+        <input type="submit" name="go_to_homepage" value="go to homepage"></input>
+    </form>
+  </body>
+</html>
+
+

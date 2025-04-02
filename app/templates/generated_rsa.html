@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RSA generated</title>
+</head>
+<body>
+<h1> The following RSA was generated: </h1>
+    <p>primes: {{prime_p}} {{prime_q}}</p>
+    <p>Choose an action you want to do</p>
+    <form method="POST" action ="/#">
+        <input type="hidden" name="prime_p" value="{{prime_p}}"></input> 
+        <input type="hidden" name="prime_q" value="{{prime_q}}"></input>
+        <input type="hidden"name="encryption_key_e" value="{{encryption_key_e}}"></input>
+        <input type="submit" name="this_RSA_encrypt" value="Encrypt using this RSA"></input>
+        <input type="submit" name="this_RSA_decrypt" value="Decrypt using this RSA"></input>
+        <input type="submit" name="this_RSA_sign" value="Sign using this RSA"></input>
+        <input type="submit" name="this_RSA_authenticate" value="Authenticate somebody's RSA signature"></input>
+        <input type="submit" name="this_RSA_save" value="Save this RSA"></input>
+  </form>
+</body>
+</html>
+

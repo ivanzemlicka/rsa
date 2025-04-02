@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>new RSA</title>
+  </head>
+  <body>
+    <h2>RSA encryption</h2>
+    <form method="POST" action ="/">
+      <p align=left>
+        Message:
+        <input type="text" name="enter_p" value="{{p}}"></input>
+        <br> Encryption Key:
+        <input type="text" name="enter_q" value="{{q}}"></input>
+        <br> The product of unknown primes n=p*q:
+        <input type="text" name="enter_n" value="{{n}}"></input>
+        <br> The product of unknown primes n=p*q:
+        <input type="text" name="enter_phi" value="{{phi}}"></input>
+        <br> The product of unknown primes n=p*q:
+        <input type="text" name="enter_e" value="{{e}}"></input>
+        <br>
+        <input type="text" name="enter_d" value="{{d}}"></input>
+        <br>
+        <input type="submit" name="RSA_encrypt_new" value="Encrypt using RSA"></input>
+        <input type="submit" name="RSA_decrypt_new" value="Decrypt using RSA"></input>
+        <input type="submit" name="RSA_generate_new" value="Generate new RSA"></input>
+        <input type="submit" name="RSA_sign_new" value="Sign using RSA"></input>
+        <input type="submit" name="RSA_authenticate_signature_new" value="Authenticate somebody's RSA signature"></input>
+        <input type="submit" name="go_to_homepage" value="go to homepage"></input>
+      </p>
+    </form>
+  </body>
+</html>

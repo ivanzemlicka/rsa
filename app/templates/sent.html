@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>sending encrypted message</title>
+  </head>
+  <body>
+    <h2>sending encrypted message</h2>
+    <h4>Your encrypted message {{encrypted_message_em}} was sent to {{user}}.</h4>
+    <form method="POST" action ="/">
+        <input type="hidden" name="user" value="{{ user }}">
+        <input type="hidden" name="encrypted_message_em" value="{{ encrypted_message_em }}">
+        <input type="submit" name="go_to_homepage" value="go to homepage"></input>
+    </form>
+  </body>
+</html>
+
+

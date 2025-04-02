@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>RSA sign</title>
+  </head>
+  <body>
+    <h2>RSA sign</h2>
+    <h4>click</h4>
+    <form method="POST" action ="/">
+      <p align=left>
+        Prime p:     
+        <input type="text" name="enter_prime_p" value="{{prime_p}}"></input> 
+        <br> Prime q: 
+        <input type="text" name="enter_prime_q" value="{{prime_q}}"></input>
+        <br> Message:
+        <input type="text" name="enter_message_m" value="{{message_m}}"></input>
+        <br> Encryption Key:
+        <input type="text" name="enter_encryption_key_e" value="{{encryption_key_e}}"></input>
+        <br>
+        <input type="submit" name="sign_the_message" value="sign the message"></input>
+        <input type="submit" name="go_to_homepage" value="go to homepage"></input>
+      </p>
+    </form>
+  </body>
+</html>

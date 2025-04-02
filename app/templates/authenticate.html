@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>RSA authentication</title>
+  </head>
+  <body>
+    <h2>RSA authentication of signature</h2>
+    <h4>Enter values and click on the authenticate button.</h4>
+    <form method="POST" action ="/">
+      <p align=left>
+        Original message:
+        <input type="text" name="enter_original_message_m" value="{{message_m}}"></input>
+        <br> Signed message:
+        <input type="text" name="enter_signed_message_sm" value="{{signed_message_sm}}"></input>
+        <br> Encryption Key:
+        <input type="text" name="enter_encryption_key_e" value="{{encryption_key_e}}"></input>
+        <br> The product of unknown primes n=p*q:
+        <input type="text" name="enter_n" value="{{n}}"></input>
+        <br>
+        <input type="submit" name="authenticate_the_signature" value="authenticate_the_signature"></input>
+        <input type="submit" name="go_to_homepage" value="go to homepage"></input>
+      </p>
+    </form>
+  </body>
+</html>

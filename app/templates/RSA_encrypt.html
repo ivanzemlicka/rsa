@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>RSA encryption</title>
+  </head>
+  <body>
+    <h2>RSA encryption</h2>
+    <h4>Enter values and click on the encrypt button.</h4>
+    <form method="POST" action ="/">
+      <p align=left>
+        Message:
+        <input type="text" name="enter_message_m" value="{{message_m}}"></input>
+        <br> Encryption Key:
+        <input type="text" name="enter_encryption_key_e" value="{{encryption_key_e}}"></input>
+        <br> The product of unknown primes n=p*q:
+        <input type="text" name="enter_n" value="{{n}}"></input>
+        <br>
+        <input type="submit" name="encrypt_the_message" value="encrypt the message"></input>
+        <input type="submit" name="go_to_homepage" value="go to homepage"></input>
+      </p>
+    </form>
+  </body>
+</html>
